@@ -1,0 +1,35 @@
+{
+  "name": "portfolioNOWE",
+  "version": "1.0.0",
+  "description": "Natalia Nowak portfolio",
+  "private": true,
+  "homepage":"https://github.com/natalianowak/portfolioNowe.git",
+  "scripts": {
+    "start": "browser-sync start --server ./src --files ./src",
+    "deploy:github-pages": "git subtree push --prefix src origin gh-pages"
+  },
+  "author": "Natalia Nowak",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.18.0",
+    "browser-sync": "^2.14.0",
+    "chai": "^3.5.0",
+    "gulp-babel": "^6.1.2",
+    "jsdom": "^9.4.1",
+    "mocha": "^3.0.1",
+    "watch-run": "^1.2.4"
+  },
+  "engines": {
+    "node": ">=4.6",
+    "npm": ">=2.15"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "cd-magnificpopup": "0.0.2"
+  }
+}
