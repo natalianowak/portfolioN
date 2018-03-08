@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Natalia Nowak portfolio",
   "private": true,
-  "homepage":"https://github.com/natalianowak/portfolioNowe.git",
+  "homepage":"https://natalianowak.github.io/portfolioNowe/",
   "scripts": {
     "start": "browser-sync start --server ./src --files ./src",
     "deploy:github-pages": "git subtree push --prefix src origin gh-pages"
