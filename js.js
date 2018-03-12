@@ -175,6 +175,19 @@ $(document).ready(function () {
 //
 
 
+  $(".content").mouseenter(function () {
+    console.log($(this.children));
+
+    // $(this).find('button').css("display","inline-block");
+    $(this).find('button').fadeIn( "slow" );
+
+    });
+
+  $(".content").mouseleave(function () {
+    // $(this).find('button').css("display","none");
+    $(this).find('button').fadeOut("slow" );
+    });
+
 
 });
 
