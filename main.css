@@ -3,26 +3,26 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+/*html, body, div, span, applet, object, iframe,*/
+/*h1, h2, h3, h4, h5, h6, p, blockquote, pre,*/
+/*a, abbr, acronym, address, big, cite, code,*/
+/*del, dfn, em, img, ins, kbd, q, s, samp,*/
+/*small, strike, strong, sub, sup, tt, var,*/
+/*b, u, i, center,*/
+/*dl, dt, dd, ol, ul, li,*/
+/*fieldset, form, label, legend,*/
+/*table, caption, tbody, tfoot, thead, tr, th, td,*/
+/*article, aside, canvas, details, embed,*/
+/*figure, figcaption, footer, header, hgroup,*/
+/*menu, nav, output, ruby, section, summary,*/
+/*time, mark, audio, video {*/
+  /*margin: 0;*/
+  /*padding: 0;*/
+  /*border: 0;*/
+  /*font-size: 100%;*/
+  /*font: inherit;*/
+  /*vertical-align: baseline;*/
+/*}*/
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -80,14 +80,22 @@ header {
   color: #FFFFFF;
   font-size: 50px;
 }
-
-.nav {
+.belkaGorna{
   width: 100%;
   top: 0px;
   height: 69px;
   left: 0px;
   position: absolute;
   box-shadow: 0 6px 6px -6px black;
+  font-size: 15px;
+}
+.nav {
+  width: 100%;
+  top: 0px;
+  height: 69px;
+  left: 0px;
+  position: absolute;
+  /*box-shadow: 0 6px 6px -6px black;*/
   font-size: 15px;
 }
 
@@ -147,9 +155,9 @@ header {
 
 .name {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 20%;
-
+  width: 100%;
 }
 
 .green {
@@ -270,8 +278,7 @@ header {
 }
 
 .contener{
-  position: relative;
-  top: 40px;
+  padding-top: 40px;
 }
 .skills h1 {
   text-align: center;
@@ -288,9 +295,9 @@ header {
 }
 
 .technologie {
-  left: 51px;
-  width: 133px;
-  position: absolute;
+  float: left;
+  width: 30%;
+  padding-right: 15px;
 }
 
 .technologie ul li {
@@ -303,9 +310,7 @@ header {
 }
 
 .prog {
-  left: 200px;
-  width: 533px;
-  position: absolute;
+  width: 70%;
 }
 
 #skills {
@@ -611,10 +616,14 @@ header {
   /*-webkit-animation-delay: 2s; !* Chrome, Safari, Opera *!*/
   /*animation-delay:2s;*/
 }
+.flex{
+  display: flex;
+}
 
 .aboutme2{
   background-color: #6f7a8a;
   height:130vh;
+  margin-top: -20px;
 }
 .portfolio h1{
   padding-top:20vh ;
@@ -637,8 +646,14 @@ header {
   width: 100%;
   margin: 40px 0px;
   min-height: 165px;
+  position: absolute;
 }
 
+/*.font_2{*/
+  /*color: white;*/
+  /*font-family: 'Montserrat', sans-serif;*/
+  /*font-weight: 900;*/
+/*}*/
 .tile {
   margin:5px;
   float: left;
@@ -854,12 +869,24 @@ a:visited{
   }
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 812px) {
 header{
   width: 100%;
 }
+  .name{
+left: 15%;
+  }
+  .font_1{
+    font-size: 70px;
+  }
+  .font_5{
+    font-size: 40px;
+  }
   .nav{
     width: 100%;
+  }
+  .nav ul{
+    left: 15%;
   }
   .aboutme{
     width: 100%;
@@ -867,6 +894,12 @@ header{
   }
   .box{
     width: 100%;
+  }
+  .portfolio h1{
+    font-size: 55px;
+  }
+  .portfolio h2{
+    font-size: 25px;
   }
   .contact{
     width: 100%;
@@ -880,11 +913,19 @@ header{
   .skills{
     width: 100%;
   }
+  .skills h1{
+    padding-top: 100px;
+    font-size: 55px;
+  }
+  .skills h2{
+    font-size: 25px;
+  }
   .technologie{
 
   }
   .aboutme2{
-    width: 100%
+    width: 100%;
+    height:160vh;
   }
   footer{
     width: 100%;
@@ -900,38 +941,343 @@ header{
   .last{
     width: 100%;
   }
-}
-
-@media only screen and (max-width: 680px) {
-/*.name{*/
-  /*left: 6%;*/
-/*}*/
-  /*.font_1 {*/
-    /*font-size: 75px;*/
-  /*}*/
-  /*.font_5 {*/
-    /*font-size: 45px;*/
-  /*}*/
-  /*.skills h1 {*/
-
-    /*font-size: 55px;*/
-  /*}*/
-  /*.skills h2 {*/
-    /*font-size: 25px;*/
-  /*}*/
-/*.prog{*/
-  /*width: 70%;*/
-/*}*/
-/*.technologie{*/
-  /*width: 20%;*/
-/*}*/
-  /*.portfolio h1 {*/
-    /*font-size: 55px;*/
-  /*}*/
-  /*.portfolio h2 {*/
-    /*font-size: 25px;*/
-  /*}*/
   .tile{
     width: 47%;
   }
+}
+
+@media only screen and (max-width: 680px) {
+  /*  ALL TRANSITIONS */
+  #cross span:nth-child(1),
+  #menuToggle.open #hamburger span:nth-child(2),
+  #menuToggle.open #hamburger span:nth-child(1),
+  #cross span:nth-child(2),
+  #menuToggle.open #hamburger span:nth-child(3),
+  #menuToggle.open #cross span:nth-child(2),
+  #hamburger span:nth-child(1),
+  #hamburger span:nth-child(2),
+  #hamburger span:nth-child(3),
+  #cross,
+  #menuToggle.open #cross span:nth-child(1) {
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -ms-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /*  MENUTOGGLE  */
+  .menuToggle_Container {
+
+  }
+
+  #menuToggle {
+    margin: auto;
+    right: 5%;
+    /*bottom: 0;*/
+    top: 18px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  /*  HAMBURGER  */
+  #hamburger {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  #hamburger span {
+    width: 30px;
+    height: 2px;
+    background: #333;
+    display: block;
+    margin: 6px auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #hamburger span:nth-child(1) {
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    -ms-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+  }
+
+  #hamburger span:nth-child(2) {
+    -webkit-transition-delay: .425s;
+    -moz-transition-delay: .425s;
+    -ms-transition-delay: .425s;
+    -o-transition-delay: .425s;
+    transition-delay: .425s;
+  }
+
+  #hamburger span:nth-child(3) {
+    -webkit-transition-delay: .55s;
+    -moz-transition-delay: .55s;
+    -ms-transition-delay: .55s;
+    -o-transition-delay: .55s;
+    transition-delay: .55s;
+  }
+
+  /*  HAMBURGER : OPEN */
+  #menuToggle.open #hamburger span {
+    width: 0%;
+  }
+
+  #menuToggle.open #hamburger span:nth-child(1) {
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+  }
+
+  #menuToggle.open #hamburger span:nth-child(2) {
+    -webkit-transition-delay: .05s;
+    -moz-transition-delay: .05s;
+    -ms-transition-delay: .05s;
+    -o-transition-delay: .05s;
+    transition-delay: .05s;
+  }
+
+  #menuToggle.open #hamburger span:nth-child(3) {
+    -webkit-transition-delay: .15s;
+    -moz-transition-delay: .15s;
+    -ms-transition-delay: .15s;
+    -o-transition-delay: .15s;
+    transition-delay: .15s;
+  }
+
+  /*  CROSS  */
+  #cross {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  #cross span {
+    background: #333;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  #cross span:nth-child(1) {
+    width: 2px;
+    height: 0%;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+    top: -2px;
+    left: 0;
+    right: 0;
+  }
+
+  #cross span:nth-child(2) {
+    width: 0%;
+    height: 2px;
+    -webkit-transition-delay: .1s;
+    -moz-transition-delay: .1s;
+    -ms-transition-delay: .1s;
+    -o-transition-delay: .1s;
+    transition-delay: .1s;
+    top: 14px;
+    left: -1px;
+  }
+
+  /*  CROSS : OPEN  */
+  #menuToggle.open #cross span:nth-child(1) {
+    height: 34px;
+    -webkit-transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+  }
+
+  #menuToggle.open #cross span:nth-child(2) {
+    width: 34px;
+    -webkit-transition-delay: .2s;
+    -moz-transition-delay: .2s;
+    -ms-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition-delay: .2s;
+  }
+
+  /*  MENU LIST  */
+  .nav {
+    position: absolute;
+    /*margin-right: -6%;*/
+    margin-top: 66px;
+    z-index: -1;
+    width: 100%;
+    /*background-color: #6f7a8a ;*/
+    float: right;
+    overflow: hidden;
+    right: -100%;
+    -webkit-transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -ms-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+    transition: .7s ease-in-out;
+  }
+
+  .nav.open {
+    position: absolute;
+    margin-top: 66px;
+    width: 100%;
+    right: 0;
+    z-index: 1;
+  }
+
+  .nav ul {
+
+    /*float: left;*/
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    left:0;
+  }
+
+  /*.nav ul li {*/
+    /*width: auto;*/
+    /*float: left;*/
+  /*}*/
+  /*.nav ul{*/
+
+    /*margin:0 auto;*/
+    /*padding-left: 10px;*/
+  /*}*/
+
+  .name{
+    left: 10%;
+  }
+  .name h1{
+    font-size: 40px;
+  }
+  .name h2{
+    font-size: 27px;
+  }
+  .nav{
+    font-size:12px;
+  }
+   .nav ul a {
+    padding: 0 5px;
+  }
+  .textDiv {
+    width: 90%;
+  }
+  .skills h1{
+    padding-top: 100px;
+    font-size: 45px;
+  }
+  .skills h2{
+    font-size: 22px;
+  }
+  .skills h1{
+    padding-top: 100px;
+    font-size: 30px;
+    letter-spacing: 10px;
+
+  }
+  .skills h2{
+    font-size: 22px;
+  }
+  .portfolio h1{
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+  .portfolio h2{
+    font-size: 22px;
+  }
+  .technologie ul li {
+    font-size: 18px;
+  }
+
+  .box p {
+    font-size: 12px;
+  }
+  #portfolio {
+
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .contact{
+    height:730px;
+  }
+  .contactLeft{
+    width:100%;
+    height: 170px;
+    text-align: center;
+  }
+  .contactLeft h2{
+    padding-left: 0;
+  }
+  .contactLeft p{
+    padding-left: 0;
+  }
+  .contactRight{
+    width:100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .last p{
+    font-size: 12px;
+  }
+  .prog{
+    width:85%;
+  }
+  .technologie{
+    position: absolute;
+    width: 50%;
+    margin-top: -30px;
+  }
+  .technologie ul li {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .prog{
+    position: absolute;
+
+  }
+  #skills li {
+    margin-bottom: 47px;
+
+  }
+  .aboutme {
+    width: 100%;
+    min-height: 1300px;
+  }
+}
+@media only screen and (max-width: 580px) {
+
+
 }
