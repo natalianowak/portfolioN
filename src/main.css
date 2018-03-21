@@ -150,7 +150,7 @@ header {
   top: 25%;
   left: 31%;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .name {
@@ -255,7 +255,9 @@ header {
 }
 
 .aboutme {
-  background-image: url(back2.jpg);
+  background-image: url(back2.jpg); /* fallback for older browsers */
+  background-image: linear-gradient(to bottom, rgba(111,122,138, 0.5) 0%,rgba(111,122,138, 0.5) 100%), url(back2.jpg);
+  /*background-image: url(back2.jpg);*/
   height: 140vh;
   background-attachment: fixed;
   background-position: center;
@@ -675,8 +677,16 @@ header {
   /*opacity: 0.5;*/
   /*cursor: pointer;*/
 }
+.screen{
+  width:90%;
+}
+.screen:hover{
+  opacity:0.5;
+}
 footer{
-  background-image: url("background1.jpg");
+  background-image: url("background1.jpg"); /* fallback for older browsers */
+  background-image: linear-gradient(to bottom, rgba(111,122,138, 0.5) 0%,rgba(111,122,138, 0.5) 100%), url("background1.jpg");
+  /*background-image: url("background1.jpg");*/
   background-size: cover;
   height: 100vh;
   min-height:1000px;
@@ -807,12 +817,15 @@ footer{
 .content p {
   /*text-align: center;*/
   color: white;
-  margin-top:10px;
+  margin-top:10%;
+}
+.screen{
+  margin-top:8%;
 }
 .content button{
   display: none;
   color: rgba(51, 59, 80, 1);
-  margin-top: 10px;
+  margin-top:8%;
   font-size: 15px;
   line-height: 20px;
   background-color: #00D646;
@@ -1278,6 +1291,8 @@ left: 15%;
   }
 }
 @media only screen and (max-width: 580px) {
+.aboutme2{
 
+}
 
 }
