@@ -308,7 +308,7 @@ header {
   display: block;
   padding-bottom: 20px;
   text-align: right;
-  color: #BEC7D5;
+  /*color: #BEC7D5;*/
 }
 
 .prog {
@@ -559,7 +559,7 @@ header {
   position: absolute;
   right: -60px;
   font-size: 18px;
-  color: #BEC7D5;
+  /*color: #BEC7D5;*/
 
 }
 
@@ -784,6 +784,7 @@ footer{
 .icon img{
   width: 30px;
   height:30px;
+  margin: 7px;
 }
 .last{
   height:100px;
@@ -848,6 +849,14 @@ a:hover{
 a:visited{
   text-decoration: none;
   color: rgba(51, 59, 80, 1);
+}
+.contact a{
+  color: white;
+  transition: all 1s;
+}
+.contact a:hover{
+  color: #BEC7D5;
+  transition: all 1s;
 }
 
 /*#gototop{*/
