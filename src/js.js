@@ -174,19 +174,24 @@ $(document).ready(function () {
 //   }
 //
 
+  if (screen.width < 860) {
+    $(".content button").css("display", "-webkit-inline-box")
+  }
+  else {
+    $(".content").mouseenter(function () {
+      console.log($(this.children));
 
-  $(".content").mouseenter(function () {
-    console.log($(this.children));
-
-    // $(this).find('button').css("display","inline-block");
-    $(this).find('button').fadeIn( "slow" );
+      // $(this).find('button').css("display","inline-block");
+      $(this).find('button').fadeIn( "slow" );
 
     });
 
-  $(".content").mouseleave(function () {
-    // $(this).find('button').css("display","none");
-    $(this).find('button').fadeOut("slow" );
+    $(".content").mouseleave(function () {
+      // $(this).find('button').css("display","none");
+      $(this).find('button').fadeOut("slow" );
     });
+  }
+
 
 
 });
