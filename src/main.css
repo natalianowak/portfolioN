@@ -1367,5 +1367,10 @@ padding-left: 15%;
     font-size: 12px;
     padding: 3px 8px 3px 8px;
   }
-
+  .nav ul a {
+    padding: 0 3px;
+  }
+  .nav {
+    font-size: 10px;
+  }
 }
