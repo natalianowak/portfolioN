@@ -1327,9 +1327,45 @@ padding-left: 15%;
     margin-bottom: 5px;
   }
 }
-@media only screen and (max-width: 580px) {
-.aboutme2{
+@media only screen and (max-width: 370px) {
+  .name h1 {
+    font-size: 30px;
+  }
+  .technologie ul li {
+    font-size: 17px;
+  }
+  .technologie {
+    width: 69%;
+  }
+  .skills h1 {
 
-}
+    font-size: 25px;
+  }
+  .portfolio h1 {
+    font-size: 25px;
+  }
+  .skills h2 {
+    font-size: 20px;
+  }
+  .portfolio h2 {
+    font-size: 20px;
+  }
+  #portfolio {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .tile {
+    width: 45%;
+  }
+  .textDiv {
+    top: 30%;
+  }
+  .prog {
+    width: 80%;
+  }
+  .content button {
+    font-size: 12px;
+    padding: 3px 8px 3px 8px;
+  }
 
 }
