@@ -1,11 +1,11 @@
 var wow = new WOW(
   {
-    boxClass:     'wow',      // animated element css class (default is wow)
+    boxClass: 'wow',      // animated element css class (default is wow)
     animateClass: 'animated', // animation css class (default is animated)
-    offset:       0,          // distance to the element when triggering the animation (default is 0)
-    mobile:       true,       // trigger animations on mobile devices (default is true)
-    live:         true,       // act on asynchronously loaded content (default is true)
-    callback:     function(box) {
+    offset: 0,          // distance to the element when triggering the animation (default is 0)
+    mobile: true,       // trigger animations on mobile devices (default is true)
+    live: true,       // act on asynchronously loaded content (default is true)
+    callback: function (box) {
       // the callback is fired every time an animation is started
       // the argument that is passed in is the DOM node being animated
     },
@@ -16,8 +16,6 @@ wow.init();
 
 
 $(document).ready(function () {
-
-
 
 
   $('header a[href^="#"]').on('click', function (event) {
@@ -182,21 +180,20 @@ $(document).ready(function () {
       console.log($(this.children));
 
       // $(this).find('button').css("display","inline-block");
-      $(this).find('button').fadeIn( "slow" );
+      $(this).find('button').fadeIn("slow");
 
     });
 
     $(".content").mouseleave(function () {
       // $(this).find('button').css("display","none");
-      $(this).find('button').fadeOut("slow" );
+      $(this).find('button').fadeOut("slow");
     });
   }
 
 
-
 });
 
-jQuery(document).ready(function() {
+jQuery(document).ready(function () {
   jQuery('#menuToggle').click(function () {
     jQuery('#menuToggle').toggleClass('open');
     if (jQuery('#menuToggle').hasClass('open')) {
@@ -207,3 +204,56 @@ jQuery(document).ready(function() {
   });
 });
 
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 1000) {
+
+    asec = 500;
+    $("#javascript").addClass("javascript");
+    $("#javascript .procent").addClass("opacityAnim");
+    $("#javascript .procent").css("display","block");
+
+    setTimeout(function () {
+      $("#html").addClass("html");
+      $("#html .procent").addClass("opacityAnim");
+      $("#html .procent").css("display","block");
+    }, asec * 1);
+    setTimeout(function () {
+      $("#css").addClass("css");
+      $("#css .procent").addClass("opacityAnim");
+      $("#css .procent").css("display","block");
+    }, asec * 2);
+    setTimeout(function () {
+      $("#sql").addClass("sql");
+      $("#sql .procent").addClass("opacityAnim");
+      $("#sql .procent").css("display","block");
+    }, asec * 3);
+    setTimeout(function () {
+      $("#bootstrap").addClass("bootstrap");
+      $("#bootstrap .procent").addClass("opacityAnim");
+      $("#bootstrap .procent").css("display","block");
+    }, asec * 4);
+    setTimeout(function () {
+      $("#jquery").addClass("jquery");
+      $("#jquery .procent").addClass("opacityAnim");
+      $("#jquery .procent").css("display","block");
+    }, asec * 5);
+    setTimeout(function () {
+      $("#reactJS").addClass("reactJS");
+      $("#reactJS .procent").addClass("opacityAnim");
+      $("#reactJS .procent").css("display","block");
+    }, asec * 6);
+    setTimeout(function () {
+      $("#git").addClass("git");
+      $("#git .procent").addClass("opacityAnim");
+      $("#git .procent").css("display","block");
+    }, asec * 7);
+    setTimeout(function () {
+      $("#photoshop").addClass("photoshop");
+      $("#photoshop .procent").addClass("opacityAnim");
+      $("#photoshop .procent").css("display","block");
+    }, asec * 8);
+
+
+  }
+});
