@@ -764,7 +764,7 @@ footer{
 .content p {
   /*text-align: center;*/
   color: white;
-  /*margin-top:10%;*/
+  margin-top:10%;
 }
 .project-link{
   padding-top: 10%;
@@ -1264,7 +1264,7 @@ padding-left: 15%;
     margin-bottom: 5px;
   }
   .project-link{
-    padding-top: 4%;
+    padding-top: 8%;
   }
 }
 @media only screen and (max-width: 370px) {
@@ -1317,7 +1317,7 @@ padding-left: 15%;
     font-size: 10px;
   }
   .project-link{
-    padding-top: 3%;
+    padding-top: 5%;
   }
   /*.screen{*/
     /*width: 70%;*/
